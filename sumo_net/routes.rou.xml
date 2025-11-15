@@ -1,0 +1,17 @@
+<routes>
+    <!-- Vehicle type definition -->
+    <vType id="car" accel="1.0" decel="4.5" length="5" minGap="2" maxSpeed="20"/>
+
+    <!-- Traffic flows (change the from/to edges to match YOUR edges) -->
+    <flow id="north_south" type="car" begin="0" end="3600" vehsPerHour="600"
+          from="E4" to="E5"/>
+
+    <flow id="south_north" type="car" begin="0" end="3600" vehsPerHour="600"
+          from="-E5" to="-E4"/>
+
+    <flow id="east_west" type="car" begin="0" end="3600" vehsPerHour="600"
+          from="-E7" to="-E6"/>
+
+    <flow id="west_east" type="car" begin="0" end="3600" vehsPerHour="600"
+          from="E6" to="E7"/>
+</routes>
